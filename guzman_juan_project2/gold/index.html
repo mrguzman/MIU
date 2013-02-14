@@ -21,20 +21,33 @@
 	</head>
 	
 	<body>
-		<div data-role="page">
-			<input for="search" type="text" placeholder="Search"/>
+		<div data-role="page" id="home">
 		
-		
-			<div data-role="header">
+			<div data-role="header" data-position="fixed">
 			
 				<h1>The Ultimate Lead Dashboard</h1>
 				
 			</div>
 
-			<div data-role="content>"
-				<a href="additem.html"><img src="image/addcontact copy.png" id="image"/></a>
+			<div data-role="content">
+				<ul data-role="listview">
+					<li>
+						<a href="additem.html">
+							<img src="image/addcontact copy.png" id="image"/>
+							<h1>Start Here</h1>
+							<p>Track, organize, manage your leads, and make that sale!</p>
+						</a>
+					</li>
+				</ul>
 				
-				<p><strong>Track, organize, manage your leads, and make that sale!</strong></p>
+				
+				<ul data-role="listview">
+					<li><a href="pardon.html">Lead Source</a></li>
+					<li><a href="pardon.html">Interest Level</a></li>
+					<li><a href="pardon.html">Preferred Time</a></li>
+					<li><a href="pardon.html">Name</a></li>
+					<li><a href="pardon.html">Contact Type</a></li>
+				</ul>
 			</div>
 			
 			<div data-role="footer" data-position="fixed">
