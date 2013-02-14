@@ -247,7 +247,6 @@ window.addEventListener("DOMContentLoaded", function(){
 		var createDiv = document.createElement('div');		//Creates UL to dipslay data as a list item
 		createDiv.setAttribute('id', 'items');
 		var createUl = document.createElement('ul');
-		var setJqmFilter = createUl.setAttribute("data-filter", "true");
 		createDiv.appendChild(createUl);
 		document.body.appendChild(createDiv);
 		autoGet('items').style.display = "block";
