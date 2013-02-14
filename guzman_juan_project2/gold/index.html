@@ -16,34 +16,48 @@
 		
 		<title>Schedule A Callback</title>
 		
-		<link href="css/form.css" rel="stylesheet" type="text/css" />
+		<link rel="stylesheet" href="http://code.jquery.com/mobile/1.2.0/jquery.mobile-1.2.0.min.css" />		
+		
 	</head>
 	
 	<body>
-		<fieldset>
-		<nav>
+		<div data-role="page">
 			<input for="search" type="text" placeholder="Search"/>
-		</nav>
-		<header>
-			<hgroup>
-				<h1>The Ultimate Lead Dashboard</h1>
-			</hgroup>
-		</header>
 		
-		<a href="additem.html"><img src="image/addcontact copy.png" id="image"/></a>
 		
-		<p><strong>Track, organize, manage your leads, and make that sale!</strong></p>
-		
-		</fieldset>
-		<fieldset>
-			<legend>Browse</legend>
-				<a href="pardon.html">Lead Source</a>
-				<a href="pardon.html">Interest Level</a>
-				<a href="pardon.html">Preferred Time</a>
-				<a href="pardon.html">Name</a>
-				<a href="pardon.html">Contact Type</a>
+			<div data-role="header">
 			
-		</fieldset>
+				<h1>The Ultimate Lead Dashboard</h1>
+				
+			</div>
+
+			<div data-role="content>"
+				<a href="additem.html"><img src="image/addcontact copy.png" id="image"/></a>
+				
+				<p><strong>Track, organize, manage your leads, and make that sale!</strong></p>
+			</div>
+			
+			<div data-role="footer" data-position="fixed">
+				<h3>Footer place holder</h3>
+			</div>
+			
+		</div>
+		<div >
+			<h3>Browse</h3>
+		</div>
+		<div data-role="content">
+			<ul data-role="listview">
+				<li><a href="pardon.html">Lead Source</a></li>
+				<li><a href="pardon.html">Interest Level</a></li>
+				<li><a href="pardon.html">Preferred Time</a></li>
+				<li><a href="pardon.html">Name</a></li>
+				<li><a href="pardon.html">Contact Type</a></li>
+			</ul>
+			
+		</div>
+		
+		<script src="http://code.jquery.com/jquery-1.8.2.min.js"></script>
+		<script src="http://code.jquery.com/mobile/1.2.0/jquery.mobile-1.2.0.min.js"></script>
 	
 	</body>
 
