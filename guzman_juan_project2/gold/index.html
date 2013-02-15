@@ -25,12 +25,12 @@
 		
 			<div data-role="header" data-position="fixed">
 			
-				<h1>The Ultimate Lead Dashboard</h1>
+				<h1>Ultimate Lead Dashboard</h1>
 				
 			</div>
 
 			<div data-role="content">
-				<ul data-role="listview">
+				<ul data-role="listview" data-inset="true" data-filter="true">
 					<li>
 						<a href="additem.html">
 							<img src="image/addcontact copy.png" id="image"/>
@@ -41,7 +41,8 @@
 				</ul>
 				
 				
-				<ul data-role="listview">
+				<ul data-role="listview" data-inset="true">
+					<li data-role="list-divider">Or Browse Content:</li>
 					<li><a href="pardon.html">Lead Source</a></li>
 					<li><a href="pardon.html">Interest Level</a></li>
 					<li><a href="pardon.html">Preferred Time</a></li>
@@ -51,23 +52,56 @@
 			</div>
 			
 			<div data-role="footer" data-position="fixed">
-				<h3>Footer place holder</h3>
+				<div data-role="navbar">
+					<ul>
+						<li><a href="#info">Info</a></li>
+						<li><a href="#about">About</a></li>
+					</ul>
+				</div>
+			</div>		
+		</div>
+	
+		<div data-role="page" id="info" data-add-back-btn="true">
+		
+			<div data-role="header" data-position="fixed">
+				<h1>Ultimate Lead Dashboard</h1>
 			</div>
 			
-		</div>
-		<div >
-			<h3>Browse</h3>
-		</div>
-		<div data-role="content">
-			<ul data-role="listview">
-				<li><a href="pardon.html">Lead Source</a></li>
-				<li><a href="pardon.html">Interest Level</a></li>
-				<li><a href="pardon.html">Preferred Time</a></li>
-				<li><a href="pardon.html">Name</a></li>
-				<li><a href="pardon.html">Contact Type</a></li>
-			</ul>
 			
+			
+			
+			<div data-role="footer" data-position="fixed">
+				<div data-role="navbar">
+					<ul>
+						<li><a href="#home">Home</a></li>
+						<li><a href="#info" class="ui-btn-active ui-state-persist">Info</a></li>
+						<li><a href="#about">About</a></li>
+					</ul>
+				</div>
+			</div>
 		</div>
+		
+		<div data-role="page" id="about" data-add-back-btn="true">
+		
+			<div data-role="header" data-position="fixed">
+				<h1>Ultimate Lead Dashboard</h1>
+			</div>
+			
+		
+			
+			
+			<div data-role="footer" data-position="fixed">
+				<div data-role="navbar">
+					<ul>
+						<li><a href="#home">Home</a></li>
+						<li><a href="#info">Info</a></li>
+						<li><a href="#about" class="ui-btn-active ui-state-persist">About</a></li>
+					</ul>
+				</div>
+			</div>	
+		</div>
+			
+
 		
 		<script src="http://code.jquery.com/jquery-1.8.2.min.js"></script>
 		<script src="http://code.jquery.com/mobile/1.2.0/jquery.mobile-1.2.0.min.js"></script>
