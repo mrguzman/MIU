@@ -34,7 +34,7 @@
 			<div data-role="content">
 				<ul data-role="listview" data-inset="true">
 					<li>
-						<a href="additem.html">
+						<a href="#additem">
 							<img src="image/addcontact copy.png" id="image"/>
 							<h1>Start Here</h1>
 							<p>Track, organize, manage your leads, and make that sale!</p>
@@ -71,7 +71,7 @@
 				<div>
 					<ul data-role="listview">
 						<li>
-							<a href="guzman_juan_project2/bronze/index.html">
+							<a href="/bronze/index.html">
 								<img src="image/Metal-bronze-blue-icon.png"/>
 								<h3>Check out the Bronze!</h3>
 								<p>Variety is the spice of life!</p>
@@ -240,6 +240,88 @@
 			</div>	
 		</div>
 		
+		
+		<div data-role="page" id="additem" data-add-back-btn="true">
+		
+			<div data-role="header" data-position="fixed">
+				<h1>Schedule A Callback</h1>
+			</div>
+			
+			<div data-role="content">
+				<form action="" method="post" id="scheduleCall">
+					
+					<div data-role="fieldcontain">
+						<label for="fname">First Name:</label>
+						<input type="text" name="fname" id="fname" />
+					</div>
+					
+					<div data-role="fieldcontain">
+						<label for="lname">Last Name:</label>
+						<input type="text" name="lname" id="lname" />
+					</div>
+					
+					<div data-role="fieldcontain">
+						<label for="contactNum">Contact Number:</label>
+						<input type="text" name="contactNum" id="contactNum" />
+					</div>
+					
+					<div data-role="fieldcontain">
+						<label for="contactType">Contact Type:</label>
+						<select name="contactType" id="contactType" data-native-menu="false">
+							<option data-placeholder="true">-Please Select An Option-</option>
+							<option value="Cell">Cell</option>
+							<option value="Work">Work</option>
+							<option value="Home">Home</option>
+						</select>
+					</div>
+					
+					<div data-role="fieldcontain">
+						<fieldset data-role="controlgroup">
+							<legend>Preferred Time:</legend>
+							<input type="radio" value="Morning" name="timeOfDay" id="morning" />
+							<label for="morning">Morning</label>
+							<input type="radio" value="Afternoon" name="timeOfDay" id="afternoon" />
+							<label for="afternoon">Afternoon</label>
+							<input type="radio" value="Evening" name="timeOfDay" id="evening" />
+							<label for="evening">Evening</label>
+							<input type="radio" value="Anytime" name="timeOfDay" id="anytime" />
+							<label for="anytime">Anytime</label>
+						</fieldset>
+					</div>
+					
+					<div data-role="fieldcontain">
+						<label for="interestLevel">Interest Level:</label>
+						<input type="range" name="interestLevel" id="interestLevel" value="5" min="0" max="10"/>
+					</div>
+					
+					<div data-role="fieldcontain">
+						<label for="comments">Comments:</label>
+						<textarea type="text" name="comments" id="comments"></textarea>
+					</div>
+					
+					<div data-role="fieldcontain">
+						<input type="reset" value="Reset Form" />
+					</div>
+					
+					<div data-role="fieldcontain">
+						<input type="submit" value="Save Lead" />
+					</div>
+				</form>
+			</div>
+		
+			
+			<div data-role="footer" data-position="fixed">
+				<div data-role="navbar">
+					<ul>
+						<li><a href="#home">Home</a></li>
+						<li><a href="#info">Info</a></li>
+						<li><a href="#upcoming">Calendar</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+
+		
 		<div data-role="page" id="pardon" data-add-back-btn="true">
 		
 			<div data-role="header" data-position="fixed">
@@ -276,6 +358,7 @@
 		
 		<script src="http://code.jquery.com/jquery-1.8.2.min.js"></script>
 		<script src="http://code.jquery.com/mobile/1.2.0/jquery.mobile-1.2.0.min.js"></script>
+		<script type="text/javascript" src="js/libs/jquery.validate.min.js"></script>
 	
 	</body>
 
