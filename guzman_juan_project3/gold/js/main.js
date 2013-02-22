@@ -1,4 +1,4 @@
-
+/*
 var formValues = function(data){
 	console.log(data);
 };
@@ -18,12 +18,12 @@ $(document).ready(function(){
 	});
 	
 });
-
+*/
 
 $('#home').on('pageinit', function(){
 	//code needed for home page goes here
 });	
-/*		
+		
 $('#addItem').on('pageinit', function(){
 
 	var scheduleForm = $('#scheduleCall');
