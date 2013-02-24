@@ -1,0 +1,287 @@
+<!--doctype html-->
+
+<!--MIU February 2013-->
+<!--By Juan J Guzman-->
+
+<!--App for Scheduling Sales Callbacks: The Ultimate Lead Dashboard-->
+
+<!--Bronze App-->
+
+<html>
+
+	<head>
+		<meta charset="utf-8"/>
+		<meta name="description" content="The Ultimate Lead Dashboard"/>
+		<meta name="keywords" content="Project 1, Full Sail University, Visual Frame Works" />
+		<meta name="robots" content="index, follow" />
+		<meta name="viewport" content="user-scalable=no, width=device-width" />
+		
+		<title>Schedule A Callback</title>
+		
+		<link rel="stylesheet" href="http://code.jquery.com/mobile/1.2.0/jquery.mobile-1.2.0.min.css" />		
+		
+	</head>
+	
+	<body>
+		<div data-role="page" id="home">
+		
+			<div data-role="header" data-position="fixed">
+			
+				<h1>Ultimate Lead Dashboard</h1>
+				
+			</div>
+
+			<div data-role="content" data-filter="true">
+				<ul data-role="listview" data-inset="true" data-filter="true">
+					<li>
+						<a href="additem.html">
+							<img src="image/addcontact copy.png" id="image"/>
+							<h1>Start Here</h1>
+							<p>Track, organize, manage your leads, and make that sale!</p>
+						</a>
+					</li>
+				</ul>
+				
+				<div data-role="collapsible" data-inset="false">
+					<h3>Browse By Categories:</h3>
+						<ul data-role="listview">
+							<li><a href="#pardon">Lead Source</a></li>
+							<li><a href="#pardon">Interest Level</a></li>
+							<li><a href="#pardon">Preferred Time</a></li>
+							<li><a href="#pardon">Name</a></li>
+							<li><a href="#pardon">Contact Type</a></li>
+						</ul>
+				</div>
+			</div>
+			
+			<div data-role="footer" data-position="fixed">
+				<div data-role="navbar">
+					<ul>
+						<li><a href="#info">Info</a></li>
+						<li><a href="#upcoming">Upcoming</a></li>	
+					</ul>
+				</div>
+			</div>		
+		</div>
+	
+		<div data-role="page" id="info" data-add-back-btn="true">
+		
+			<div data-role="header" data-position="fixed">
+				<h1>Ultimate Lead Dashboard</h1>
+			</div>
+				<div>
+					<ul data-role="listview">
+						<li>
+							<a href="/gold/index.html">
+								<img src="image/Metal-gold-blue-icon.png"/>
+								<h3>Check out the Gold!</h3>
+								<p>Variety is the spice of life!</p>
+							</a>
+						</li>
+						<li>
+							<a href="https://github.com/mrguzman/MIU.git">
+								<img src="image/network-ring-icon.png"/>
+								<h3>Get the Git</h3>
+								<p>...because sharing is caring!</p>
+							</a>
+						</li>
+						<li>
+							<a href="https://plus.google.com/112331704459670919632/posts?tab=XX">
+								<img src="image/About-me-icon.png"/>
+								<h3>The Author</h3>
+								<p>Learn who resides behind the curtain.</p>
+							</a>
+						</li>
+					</ul>
+				</div>
+			
+			
+			
+			<div data-role="footer" data-position="fixed">
+				<div data-role="navbar">
+					<ul>
+						<li><a href="#home">Home</a></li>
+						<li><a href="#info" class="ui-btn-active ui-state-persist">Info</a></li>
+						<li><a href="#upcoming">Upcoming</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		
+		<div data-role="page" id="upcoming" data-add-back-btn="true">
+		
+			<div data-role="header" data-position="fixed">
+				<h1>Ultimate Lead Dashboard</h1>
+			</div>
+			
+			<div data-role="content">
+				<ul data-role="listview" data-filter="true">
+					<li>
+						<h3>Friday, February 15th 2013</h3>
+						<span class="ui-li-count">2</span>
+							<ul data-role="listview" data-filter="true">
+								<li>
+									<h4>Name: Emiliana Guzman</h4>
+									<p>Contact Number: 4075551234
+									<p>Contact Type: Cell</p>
+									<p>Preferred Time of Day: Afternoon</p>
+									<p>Interest Level: 7</p>
+								</li>
+								<li>
+									<h4>Name: Tito Petrovitch</h4>
+									<p>Contact Number: 3215551234</p>
+									<p>Contact Type: Cell</p>
+									<p>Preferred Time of Day: Anytime</p>
+									<p>Interest Level: 3</p>
+								</li>
+							</ul>
+					</li>
+					<li>
+						<h3>Saturday, February 16th 2013</h3>
+						<span class="ui-li-count">1</span>
+							<ul data-role="listview" data-filter="true">
+								<li>
+									<h4>Name: Evan Guzman</h4>
+									<p>Contact Number: 4075554321</p>
+									<p>Contact Type: Work</p>
+									<p>Preferred Time of Day: Morning</p>
+									<p>Interest Level: 9</p>
+								</li>
+							</ul>
+					</li>
+					<li>		
+						<h3>Monday, February 18th 2013</h3>
+						<span class="ui-li-count">5</span>
+							<ul data-role="listview" data-filter="true">
+								<li>
+									<h4>Name: Nena Weinsteiger De Guzman</h4>
+									<p>Contact Number: 4075555678</p>
+									<p>Contact Type: Home</p>
+									<p>Preferred Time of Day: Evening</p>
+									<p>Interest Level: 4</p>
+		
+								</li>
+								<li>
+									<h4>Name: John Doe</h4>
+									<p>Contact Number: 3215551234</p>
+									<p>Contact Type: Cell</p>
+									<p>Preferred Time of Day: Anytime</p>
+									<p>Interest Level: 6</p>
+								</li>
+								<li>
+									<h4>Name: Jane Smith</h4>
+									<p>Contact Number: 2095551234</p>
+									<p>Contact Type: Cell</p>
+									<p>Preferred Time of Day: Morning</p>
+									<p>Interest Level: 3</p>
+								</li>
+								<li>
+									<h4>Name: Mickey Guzman</h4>
+									<p>Contact Number: 3215554321</p>
+									<p>Contact Type: Home</p>
+									<p>Preferred Time of Day: Anytime</p>
+									<p>Interest Level: 8</p>
+		
+								</li>
+								<li>
+									<h4>Name: Jon Smith</h4>
+									<p>Contact Number: 3215553214</p>
+									<p>Contact Type: Work</p>
+									<p>Preferred Time of Day: Anytime</p>
+									<p>Interest Level: 3</p>
+		
+								</li>
+							</ul>
+					</li>
+					<li>
+						<h3>Tuesday, February 19th 2013</h3>
+						<span class="ui-li-count">0</span>
+							<ul data-role="listview" data-filter="true">
+								<li>
+									
+								</li>
+							</ul>
+					</li>
+					<li>
+						<h3>Wednesday, February 20th 2013</h3>
+						<span class="ui-li-count">0</span>
+							<ul data-role="listview" data-filter="true">
+								<li>
+									
+								</li>
+							</ul>
+					</li>
+					<li>
+						<h3>Thursday, February 21st 2013</h3>
+						<span class="ui-li-count">0</span>
+							<ul data-role="listview" data-filter="true">
+								<li>
+									
+								</li>
+							</ul>
+					</li>
+					<li>
+						<h3>Friday, February 22nd 2013</h3>
+						<span class="ui-li-count">0</span>
+							<ul data-role="listview" data-filter="true">
+								<li>
+									
+								</li>
+							</ul>
+					</li>
+				</ul>
+			</div>
+			
+			<div data-role="footer" data-position="fixed">
+				<div data-role="navbar">
+					<ul>
+						<li><a href="#home">Home</a></li>
+						<li><a href="#info">Info</a></li>
+						<li><a href="#upcoming" class="ui-btn-active ui-state-persist">Upcoming</a></li>
+					</ul>
+				</div>
+			</div>	
+		</div>
+		
+		<div data-role="page" id="pardon" data-add-back-btn="true">
+		
+			<div data-role="header" data-position="fixed">
+				<h1>Ultimate Lead Dashboard</h1>
+			</div>
+			
+			<div data-role="content">
+				<ul data-role="listview" data-inset="false">
+					<li>
+						<a href="#home">
+							<img src="image/Button-Warning-icon.png"
+							<h1>Pardon Our Dust!</h1>
+							<h2>This page is under construction.</h2>
+							<p>But please feel free to navigate our other features!</p>
+						</a>
+					</li>
+				</ul>
+				
+			</div>
+		
+			
+			<div data-role="footer" data-position="fixed">
+				<div data-role="navbar">
+					<ul>
+						<li><a href="#home">Home</a></li>
+						<li><a href="#info" class="ui-btn-active ui-state-persist">Info</a></li>
+						<li><a href="#upcoming">Upcoming</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+			
+
+		
+		<script src="http://code.jquery.com/jquery-1.8.2.min.js"></script>
+		<script src="http://code.jquery.com/mobile/1.2.0/jquery.mobile-1.2.0.min.js"></script>
+	
+	</body>
+
+
+</html>
+
