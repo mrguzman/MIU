@@ -1,12 +1,11 @@
-/*
+
 $('#home').on('pageinit', function(){
 	//code needed for home page goes here
 	
 	
 });	
-*/
 		
-$(document).ready(function(){
+$('#additem').on('pageinit', function(){
 
 		var myForm = $('#scheduleCall');
 		    myForm.validate({
