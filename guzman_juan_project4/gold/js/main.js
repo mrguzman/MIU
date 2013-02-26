@@ -13,13 +13,11 @@ $('#additem').on('pageinit', function(){
 			},
 			submitHandler: function() {
 		var data = myForm.serializeArray();
-			storeData(this.key);
+			storeData(data);
 		}
 	});
 	
-	var storeData = function(key){
-		console.log(key);
-	
+	var storeData = function(key, data){
 			if(!key){
 			var id = Math.floor(Math.random()*100000001);
 		}else{
