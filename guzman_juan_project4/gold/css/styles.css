@@ -1,19 +1,5 @@
-
-
-body {
-	background: url("image/stripes.png");
-	background-repeat: repeat-y;
-	background-position: center center;
-	background-attachment: scroll;
-	background-size: 100% 100%;
-}
-
-.ui-page {
-	background: transparent;
-}
-
-.ui-content {
-	background: transparent;
+.ui-mobile, .ui-mobile .ui-page  {
+	background: #829f82;
 }
 
 label.error {
